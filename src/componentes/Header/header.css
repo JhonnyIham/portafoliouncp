@@ -1,0 +1,33 @@
+.header{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 60px;
+}
+.navegacion{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.link-activo {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.3em;
+    text-decoration-color: #1A78DF
+}
+.header__boton{
+    cursor: pointer;
+    padding: 2px 0 0 0 ;
+    transition: transform 0.3s ease;
+}
+.header__boton:hover{
+    transform: scale(1.5);
+}

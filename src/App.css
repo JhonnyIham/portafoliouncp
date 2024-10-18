@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --color-text-dark: #ffffff ; 
+    --background-dark: #041d05 ; 
+    --background-icon-dark: #3c640f;
+    --color-text-h2-dark: #53a723;
+    --background-proyect-dark: #30302e;
+
+    --color-text-light:  #231f20; 
+    --background-light: #eae3e3;
+    --background-icon-light: #dcd4d4;
+    --color-text-h2-light: #42446E;
+    --background-proyect-light: #dddcdc;
+}
+.light {
+    --color-text: var(--color-text-light);
+    --background-color: var(--background-light);
+    --background-icon:var(--background-icon-light);
+    --color-text-h2:var(--color-text-h2-light);
+    --background-project: var(--background-proyect-light);
+}
+.dark {
+    --color-text: var(--color-text-dark);
+    --background-color: var(--background-dark);
+    --background-icon:var(--background-icon-dark);
+    --color-text-h2:var(--color-text-h2-dark);
+    --background-project: var( --background-proyect-dark);
+}
+body {
+    color: var(--color-text);
+    background-color: var(--background-color);
+    transition: color 0.3s ease, background-color 0.3s ease;
+    margin-top: 82px;
+    width: 100%;
+}
+.App{
+    min-height: calc(70vh - 50px);
+}
+img{
+    display: inline-block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+button{
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+h2{
+    color: var( --color-text-h2);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@media (max-width: 550px) {
+    body {
+        margin-top: 150px;
+    }
+}

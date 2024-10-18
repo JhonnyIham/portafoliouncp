@@ -1,0 +1,64 @@
+.sobreMi {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.sobreMi h2{
+    font-size: 2.0rem;
+}
+.sobreMi-biografia, .sobreMi-educacion {
+    margin-bottom: 40px;
+}
+.sobreMi-titulo {
+    margin-bottom: 15px;
+} 
+.sobreMi-texto {
+    line-height: 1.6;
+}
+.educacion-item {
+    margin-bottom: 20px;
+}
+.educacion-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.educacion-detalle, .educacion-info {
+    margin-bottom: 5px;
+}
+.educacion-titulo {
+    color: #3296d8;
+    margin: 0;
+}
+.educacion-tipo {
+    margin: 0;
+}
+.tipo-contain{
+    background-color: var(--background-icon);
+    width: 164px;
+    border-radius: 15px;
+}
+.educacion-tipo {
+    text-align: center;
+    width: 165px;
+}
+.educacion-institucion, .educacion-periodo {
+    color: #7F8C8D;
+    margin: 0;
+}
+.educacion-separador {
+    border: 0;
+    height: 1px;
+    background: #BDC3C7;
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+    .educacion-content {
+        flex-direction: column;
+    }
+    .educacion-tipo {
+        text-align: left;
+        margin-left: 40px;
+    }
+    
+}

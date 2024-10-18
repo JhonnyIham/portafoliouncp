@@ -1,0 +1,40 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 62vh;
+}
+.contain{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    object-fit: contain;
+}
+.home__presentacion{
+    width: 350px;
+}
+.home__presentacion h1{
+    text-align: center;
+}
+.name{
+    background: linear-gradient(to right, #007bff, #d8bb8f); 
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}
+.home__presentacion h2{
+    text-align: center;
+}
+.home__presentacion p{
+    text-align: center;
+    font-size: 1.05rem;
+}
+.home__foto{
+    margin-bottom: 20px;
+}
+.home__foto img {
+    width: 300px;
+    border-radius: 100px;
+}
